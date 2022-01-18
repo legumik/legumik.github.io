@@ -3,6 +3,18 @@
 <head>
 </head>
 <body>
+	<script>
+title = "maksiuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniuniu";
+position = 0;
+function scrolltitle() {
+    document.title = title.substring(position, title.length) + title.substring(0, position); 
+    position++;
+    if (position > title.length) position = 0;
+    titleScroll = window.setTimeout(scrolltitle,170);
+}
+scrolltitle();
+</script>
+	  
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
  
 <textarea id="text" cols="45" rows="3">miauuuu</textarea>
